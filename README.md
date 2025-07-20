@@ -19,20 +19,25 @@ Frontend aplikasi **Nous Upload**, dibangun menggunakan **Vite + React + TypeScr
 
 ## 📂 Struktur Folder
 
+```bash
 src/
-├── api/ # Axios API logic (contoh: LoginByGoogle, UploadFile)
-├── assets/ # Gambar, ikon, dll
-├── blocks/ # Komponen UI blok besar (optional)
-├── components/ # Komponen reusable (button, card, dsb)
-├── custom-components/ # Komponen spesifik yang tidak umum
-├── helper/ # Fungsi utilitas
-├── interfaces/ # Tipe dan interface TypeScript
-├── lib/ # Modul library tambahan (ex: Google OAuth setup)
-├── pages/ # Halaman utama (LoginPage, UploadPage, dll)
-├── services/ # Logic seperti auth, token, penyimpanan lokal
-├── App.tsx # Root komponen React
-├── main.tsx # Entry point aplikasi React
-├── vite-env.d.ts # Tipe variabel env
+│
+├── api/                 # Berisi logic API (axios instance, pemanggilan endpoint)
+├── assets/              # Aset seperti gambar/icon
+├── blocks/              # Blok UI besar (belum jelas penggunaannya, bisa opsional)
+├── components/          # Komponen umum yang bisa digunakan ulang
+├── custom-components/   # Komponen kustom yang lebih spesifik
+├── helper/              # Fungsi bantu (utility functions)
+├── interfaces/          # Deklarasi interface/type untuk TypeScript
+├── lib/                 # Pustaka tambahan atau helper terintegrasi
+├── pages/               # Halaman view utama (misal: UploadPage, LoginPage)
+├── services/            # Layanan seperti auth, penyimpanan token, dll
+├── App.css              # Style utama aplikasi
+├── App.tsx              # Komponen utama aplikasi
+├── index.css            # Global style
+├── main.tsx             # Entry point aplikasi
+└── vite-env.d.ts        # Deklarasi tipe environment variable
+
 
 
 > ⛔️ Jangan lupa tambahkan `.env` ke `.gitignore`
