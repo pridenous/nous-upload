@@ -1,9 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { Button } from "@/components/ui/button"
 import UploadMenu from './pages/UploadMenu'
+import { Routes, Route } from "react-router-dom";
+import Login from './pages/Login';
 
 
 function App() {
@@ -11,7 +10,10 @@ function App() {
 
   return (
     <>
-        <UploadMenu/>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<UploadMenu/>} />
+      </Routes>
     </>
   )
 }
